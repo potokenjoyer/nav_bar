@@ -27,7 +27,7 @@ img {
 }
 
 .wrapper {
-    max-width: 1140px;    /*вначале писал max-height- не работало, потом понял ошибку*/
+    max-width: 1640px;    /*вначале писал max-height- не работало, потом понял ошибку*/
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -36,7 +36,57 @@ img {
     padding: 22px 0px;
 }
 
-.header_wrap {
+.header_wrap,
+.header_logo,
+.header_info,
+.header_box {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
- 
+
+.header_logo {
+    gap: 40px; /*отступ между элементами с помощью gap*/
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.header_info {
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.header_box {
+    gap: 15px;
+}
+.header_value {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 17px;
+    color: black;
+}
+.header_icon {
+    height: 30px;
+} 
+.header_icon img {
+    height: 100%;
+    object-fit: contain;
+} 
+
+.header_menu{
+    display: flexbox;
+    gap: 68px;
+}
+
+.header_menu ul li a {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: black;
+}
+
