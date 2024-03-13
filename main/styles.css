@@ -4,6 +4,16 @@
     box-sizing: border-box;     /*что бы не считать padding & margin всех элементов */
 }
 
+body{
+    background: #f9f9f9;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     list-style: none;
 }
@@ -12,3 +22,21 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 50px;
+}
+
+.wrapper {
+    max-width: 1140px;    /*вначале писал max-height- не работало, потом понял ошибку*/
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}   
+.header {
+    padding: 22px 0px;
+}
+
+.header_wrap {
+    display: flex;
+}
+ 
